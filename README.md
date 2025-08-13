@@ -1,12 +1,6 @@
 
 
-# 🛡️ Fraud Detection: E-commerce & Banking Transactions
-
-*A 10 Academy Week 8&9 Challenge Project*
-
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Status](https://img.shields.io/badge/status-active-brightgreen)
+# Fraud Detection: E-commerce & Banking Transactions
 
 ## 📌 Overview
 
@@ -50,40 +44,6 @@ fraud-detection/
 ├── requirements.txt        # Python dependencies
 ├── README.md               # Project documentation
 └── .gitignore
-```
-
----
-
-## ⚙️ Setup
-
-1. **Clone repository**
-
-   ```bash
-   git clone https://github.com/DagmMesfin/fraud-detection-week8&9.git
-   cd fraud-detection-week8&9
-   ```
-
-2. **Create & activate virtual environment**
-
-   ```bash
-   python -m venv venv
-   source venv/bin/activate      # Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Run notebooks or scripts**
-
-   ```bash
-   jupyter notebook notebooks/EDA_FraudData.ipynb
-   ```
-
----
-
 ## 🔍 Key Features
 
 * 🧹 Data cleaning & merging (IP → Country)
