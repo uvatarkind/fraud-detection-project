@@ -115,10 +115,4 @@ We used SHAP (Shapley Additive Explanations) to:
 * Understand local decisions (individual predictions).
 * Highlight the most influential features driving fraud detection.
 
-Plots available in `notebooks/shap_analysis.ipynb`.
-
----
-
-## ✍️ Author
-
-**Dagim Mesfin Seifu**
+Plots available in `notebooks/shap_analysis.ipy
