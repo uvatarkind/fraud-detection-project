@@ -119,5 +119,3 @@ SHAP (Shapley Additive Explanations) was used to:
 Plots available in `notebooks/shap_analysis.ipynb`.
 
 ---
-
-Do you want me to do that next?
