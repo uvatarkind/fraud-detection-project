@@ -1,5 +1,8 @@
-# 🛡️ Fraud Detection: E-commerce & Banking Transactions  
-_A 10 Academy Week 8&9 Challenge Project_  
+
+
+# 🛡️ Fraud Detection: E-commerce & Banking Transactions
+
+*A 10 Academy Week 8&9 Challenge Project*
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
@@ -7,65 +10,64 @@ _A 10 Academy Week 8&9 Challenge Project_
 
 ## 📌 Overview
 
-This project aims to build machine learning models that **detect fraudulent e-commerce and bank transactions** using structured transaction data. It addresses core challenges in fraud detection such as **class imbalance**, **real-time prediction**, and **model interpretability**.
+This project builds **machine learning models to detect fraudulent e-commerce and banking transactions** using structured transaction data. It tackles key challenges such as **class imbalance**, **real-time prediction**, and **model interpretability**.
 
-Developed as part of the [10 Academy](https://10academy.org/) Artificial Intelligence Mastery program (Week 8&9), under the guidance of Adey Innovations Inc.
-
----
-
-## 🚀 Project Objectives
-
-- Detect fraud in e-commerce and banking transaction datasets.
-- Handle significant class imbalance effectively.
-- Engineer informative time-based and user behavior features.
-- Build baseline and ensemble machine learning models.
-- Interpret model predictions using SHAP explainability tools.
-- Deliver clean, production-ready, and well-documented code.
+Developed as part of the [10 Academy](https://10academy.org/) AI Mastery program (Week 8&9) under the guidance of Adey Innovations Inc.
 
 ---
 
-## 🗃️ Datasets Used
+## 🚀 Objectives
 
-1. **Fraud_Data.csv**: E-commerce transactions  
-2. **IpAddress_to_Country.csv**: Maps IP ranges to country  
-3. **creditcard.csv**: Bank transaction dataset (PCA-transformed)
+* Detect fraud in e-commerce and banking datasets.
+* Handle class imbalance effectively using techniques like SMOTE.
+* Engineer time-based and user-behavior features.
+* Build baseline and ensemble machine learning models.
+* Interpret model predictions using SHAP explainability.
+* Deliver clean, production-ready, and well-documented code.
+
+---
+
+## 🗃️ Datasets
+
+1. **Fraud\_Data.csv** – E-commerce transactions
+2. **IpAddress\_to\_Country.csv** – Maps IP ranges to countries
+3. **creditcard.csv** – Bank transaction dataset (PCA-transformed)
 
 ---
 
 ## 📁 Repository Structure
 
 ```
-
 fraud-detection/
 │
-├── data/                   # Raw datasets (not pushed to GitHub)
-├── notebooks/              # Jupyter notebooks for EDA, modeling, explainability
-├── src/                    # Source code: preprocessing, features, training
+├── data/                   # Raw datasets (not included in repo)
+├── notebooks/              # Jupyter notebooks for EDA, modeling, SHAP analysis
+├── src/                    # Source code
 │   ├── preprocessing.py
-│   ├── feature\_engineering.py
-│   └── train\_models.py
+│   ├── feature_engineering.py
+│   └── train_models.py
 ├── reports/                # Final report or blog post
-├── requirements.txt        # Project dependencies
-├── README.md               # This file
+├── requirements.txt        # Python dependencies
+├── README.md               # Project documentation
 └── .gitignore
-
-````
+```
 
 ---
 
-## ⚙️ Setup Instructions
+## ⚙️ Setup
 
-1. **Clone the repository**
+1. **Clone repository**
+
    ```bash
    git clone https://github.com/DagmMesfin/fraud-detection-week8&9.git
    cd fraud-detection-week8&9
-````
+   ```
 
-2. **Create and activate virtual environment**
+2. **Create & activate virtual environment**
 
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   source venv/bin/activate      # Windows: venv\Scripts\activate
    ```
 
 3. **Install dependencies**
@@ -74,8 +76,7 @@ fraud-detection/
    pip install -r requirements.txt
    ```
 
-4. **Run the notebooks or scripts**
-   Start with:
+4. **Run notebooks or scripts**
 
    ```bash
    jupyter notebook notebooks/EDA_FraudData.ipynb
@@ -85,16 +86,16 @@ fraud-detection/
 
 ## 🔍 Key Features
 
-* 🧹 Data cleaning & merging (IP to Country)
+* 🧹 Data cleaning & merging (IP → Country)
 * ⏱️ Time-based feature engineering
-* 📉 Class imbalance handling with SMOTE
-* 📊 Model training (Logistic Regression, XGBoost/Random Forest)
-* ✅ Evaluation with AUC-PR, F1-Score, Confusion Matrix
-* 💡 Explainability with SHAP (force plots, summary plots)
+* 📉 Handling class imbalance (SMOTE)
+* 📊 Model training: Logistic Regression, Random Forest, XGBoost
+* ✅ Evaluation: F1-Score, AUC-PR, Confusion Matrix
+* 💡 Explainability: SHAP (summary & force plots)
 
 ---
 
-## 🧪 Models
+## 🧪 Models & Performance
 
 | Model               | Dataset         | F1 Score | AUC-PR  |
 | ------------------- | --------------- | -------- | ------- |
@@ -103,16 +104,20 @@ fraud-detection/
 | Logistic Regression | creditcard.csv  | `xx.xx`  | `xx.xx` |
 | XGBoost             | creditcard.csv  | `xx.xx`  | `xx.xx` |
 
-*Results filled in after training & evaluation.*
+*Results to be updated after training.*
 
 ---
 
 ## 📈 SHAP Explainability
 
-We used SHAP (Shapley Additive Explanations) to:
+SHAP (Shapley Additive Explanations) was used to:
 
-* Analyze global feature importance.
-* Understand local decisions (individual predictions).
-* Highlight the most influential features driving fraud detection.
+* Analyze **global feature importance**
+* Understand **individual predictions**
+* Identify key features driving fraud detection
 
-Plots available in `notebooks/shap_analysis.ipy
+Plots available in `notebooks/shap_analysis.ipynb`.
+
+---
+
+Do you want me to do that next?
